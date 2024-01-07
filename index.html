@@ -17,6 +17,7 @@
             background-position: center;
             font-family: Lato, "Segoe UI", Avenir, Ubuntu, Tahoma, Verdana, Helvetica, sans-serif;
             color: white; /* Set text color to white */
+            position: relative; /* Add relative positioning to the body */
         }
 
         body {
@@ -31,21 +32,38 @@
             text-transform: lowercase;
             letter-spacing: 2px; /* Add some letter spacing for a stylish look */
             margin-bottom: 20px; /* Adjust margin for better spacing */
+            position: absolute; /* Add absolute positioning */
+            bottom: 0; /* Set to bottom */
+            right: 0; /* Set to right */
+            margin: 20px; /* Add some margin for spacing */
         }
 
         svg {
             width: 250px;
             height: 250px;
         }
+
+        #logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 450px; /* Set the width to three times the original size (50px * 3) */
+            height: auto; /* Maintain aspect ratio */
+            margin: 10px; /* Adjust margin for spacing */
+        }
     </style>
 </head>
 <body>
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo" id="logo" />
+
     <!-- Customize Icon Color -->
     <!-- https://www.flaticon.com/free-icon/fast-time_2972562?term=clock&page=1&position=27# -->
     <?xml version="1.0"?>
     <svg xmlns="http://www.w3.org/2000/svg" id="coming_soon" enable-background="new 0 0 512 512" height="512px" viewBox="0 0 512 512" width="512px">
         <!-- Your SVG content -->
     </svg>
+
     <h1>Coming soon!</h1>
 </body>
 </html>
