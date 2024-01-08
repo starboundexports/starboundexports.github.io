@@ -12,12 +12,12 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            background-image: url('Container.jpg'); /* Replace 'Container.jpg' with the actual path to your image */
+            background-image: url('Container.jpg');
             background-size: cover;
             background-position: center;
             font-family: Lato, "Segoe UI", Avenir, Ubuntu, Tahoma, Verdana, Helvetica, sans-serif;
-            color: white; /* Set text color to white */
-            position: relative; /* Add relative positioning to the body */
+            color: white;
+            position: relative;
         }
 
         body {
@@ -28,14 +28,14 @@
 
         h1 {
             font-size: 4em;
-            font-weight: bold; /* Set text to bold */
+            font-weight: bold;
             text-transform: lowercase;
-            letter-spacing: 2px; /* Add some letter spacing for a stylish look */
-            margin-bottom: 20px; /* Adjust margin for better spacing */
-            position: absolute; /* Add absolute positioning */
-            bottom: 0; /* Set to bottom */
-            right: 0; /* Set to right */
-            margin: 20px; /* Add some margin for spacing */
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 20px;
         }
 
         svg {
@@ -47,9 +47,17 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 450px; /* Set the width to three times the original size (50px * 3) */
-            height: auto; /* Maintain aspect ratio */
-            margin: 10px; /* Adjust margin for spacing */
+            width: 100%; /* Set the width to 100% for mobile devices */
+            height: auto;
+            max-width: 450px; /* Set the maximum width for larger screens */
+            margin: 10px;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* Adjust styles for screens with a width of 600px or more */
+            #logo {
+                width: 450px;
+            }
         }
     </style>
 </head>
